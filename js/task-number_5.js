@@ -2,13 +2,9 @@
 
 const checkForSpam = function (message) {
   let longStrings = message.toLowerCase();
-  if (
-    longStrings.indexOf("spam") !== -1 ||
-    longStrings.indexOf("sale") !== -1
-  ) {
-    return true;
-  }
-  return false;
+  return (
+    longStrings.indexOf("spam") !== -1 || longStrings.indexOf("sale") !== -1
+  );
 };
 
 console.log(checkForSpam("Latest technology news"));

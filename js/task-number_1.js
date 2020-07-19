@@ -1,13 +1,10 @@
 "use strict";
 
 const logItems = function (array) {
-  let numbering = 1;
   const arrayLength = array.length;
   for (let i = 0; i < arrayLength; i += 1) {
-    console.log(
-      `Номер элемента [${numbering}] - Значение элемента [${array[i]}]`
-    );
-    numbering += 1;
+    console.log(`Номер элемента [${i}] - Значение элемента [${array[i]}]`);
+    i += 1;
   }
 };
 
