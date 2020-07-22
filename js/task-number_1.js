@@ -1,10 +1,11 @@
 "use strict";
 
 const logItems = function (array) {
+  let total = 1;
   const arrayLength = array.length;
   for (let i = 0; i < arrayLength; i += 1) {
-    console.log(`Номер элемента [${i}] - Значение элемента [${array[i]}]`);
-    i += 1;
+    console.log(`Номер элемента [${total}] - Значение элемента [${array[i]}]`);
+    total += 1;
   }
 };
 
